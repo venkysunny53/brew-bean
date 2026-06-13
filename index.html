@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bean — Coffee Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-cup-hot-fill me-2"></i>Brew & Bean
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero d-flex align-items-center">
+    <div class="container text-center text-white">
+      <p class="hero-tag mb-2">Est. 2018</p>
+      <h1 class="display-3 fw-bold mb-3">Freshly Brewed,<br>Every Single Day</h1>
+      <p class="lead mb-4 mx-auto hero-subtitle">
+        Artisan coffee, house-made pastries, and a cozy corner to unwind.
+      </p>
+      <a href="#menu" class="btn btn-light btn-lg px-4 me-2">View Menu</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg px-4">Visit Us</a>
+    </div>
+  </header>
+
+  <!-- Menu -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Our Menu</h2>
+        <p class="text-muted">Handcrafted drinks and bites, made with love.</p>
+      </div>
+
+      <!-- Filter buttons -->
+      <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="menu-filters">
+        <button class="btn btn-filter active" data-filter="all">All</button>
+        <button class="btn btn-filter" data-filter="coffee">Coffee</button>
+        <button class="btn btn-filter" data-filter="tea">Tea</button>
+        <button class="btn btn-filter" data-filter="food">Food</button>
+      </div>
+
+      <div class="row g-4" id="menu-grid">
+        <!-- Coffee -->
+        <div class="col-md-6 col-lg-4 menu-item" data-category="coffee">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Espresso</h5>
+                <span class="price-badge">$3.50</span>
+              </div>
+              <p class="card-text text-muted small">Rich, bold single shot of our signature blend.</p>
+              <span class="badge bg-coffee">Coffee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="coffee">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Cappuccino</h5>
+                <span class="price-badge">$4.75</span>
+              </div>
+              <p class="card-text text-muted small">Espresso with steamed milk and velvety foam.</p>
+              <span class="badge bg-coffee">Coffee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="coffee">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Latte</h5>
+                <span class="price-badge">$4.50</span>
+              </div>
+              <p class="card-text text-muted small">Smooth espresso with creamy steamed milk.</p>
+              <span class="badge bg-coffee">Coffee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="coffee">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Americano</h5>
+                <span class="price-badge">$3.75</span>
+              </div>
+              <p class="card-text text-muted small">Espresso diluted with hot water for a clean taste.</p>
+              <span class="badge bg-coffee">Coffee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="coffee">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Mocha</h5>
+                <span class="price-badge">$5.25</span>
+              </div>
+              <p class="card-text text-muted small">Chocolate, espresso, and steamed milk — decadent.</p>
+              <span class="badge bg-coffee">Coffee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="coffee">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Cold Brew</h5>
+                <span class="price-badge">$4.95</span>
+              </div>
+              <p class="card-text text-muted small">Slow-steeped for 18 hours. Smooth and refreshing.</p>
+              <span class="badge bg-coffee">Coffee</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tea -->
+        <div class="col-md-6 col-lg-4 menu-item" data-category="tea">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Earl Grey</h5>
+                <span class="price-badge">$3.25</span>
+              </div>
+              <p class="card-text text-muted small">Classic black tea with bergamot oil.</p>
+              <span class="badge bg-tea">Tea</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="tea">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Chai Latte</h5>
+                <span class="price-badge">$4.50</span>
+              </div>
+              <p class="card-text text-muted small">Spiced tea with steamed milk and a touch of honey.</p>
+              <span class="badge bg-tea">Tea</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="tea">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Matcha Latte</h5>
+                <span class="price-badge">$5.00</span>
+              </div>
+              <p class="card-text text-muted small">Ceremonial-grade matcha whisked with oat milk.</p>
+              <span class="badge bg-tea">Tea</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food -->
+        <div class="col-md-6 col-lg-4 menu-item" data-category="food">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Croissant</h5>
+                <span class="price-badge">$3.50</span>
+              </div>
+              <p class="card-text text-muted small">Buttery, flaky French pastry baked fresh daily.</p>
+              <span class="badge bg-food">Food</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="food">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Avocado Toast</h5>
+                <span class="price-badge">$7.50</span>
+              </div>
+              <p class="card-text text-muted small">Sourdough, smashed avocado, cherry tomatoes, feta.</p>
+              <span class="badge bg-food">Food</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="food">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Blueberry Muffin</h5>
+                <span class="price-badge">$3.75</span>
+              </div>
+              <p class="card-text text-muted small">Moist muffin bursting with fresh blueberries.</p>
+              <span class="badge bg-food">Food</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 menu-item" data-category="food">
+          <div class="menu-card card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title fw-bold mb-0">Bagel & Cream Cheese</h5>
+                <span class="price-badge">$4.25</span>
+              </div>
+              <p class="card-text text-muted small">Warm bagel with house-made cream cheese spread.</p>
+              <span class="badge bg-food">Food</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-about">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">About Brew & Bean</h2>
+          <p class="text-muted mb-3">
+            We started as a tiny corner shop with one espresso machine and a dream.
+            Today, we source beans directly from small farms in Ethiopia, Colombia, and Guatemala —
+            roasting them in-house every week.
+          </p>
+          <p class="text-muted mb-4">
+            Whether you're grabbing a quick latte or settling in with a book,
+            Brew & Bean is your neighborhood coffee home.
+          </p>
+          <div class="row g-3">
+            <div class="col-4 text-center">
+              <div class="stat-box">
+                <span class="stat-number">8+</span>
+                <span class="stat-label">Years</span>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-box">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Origins</span>
+              </div>
+            </div>
+            <div class="col-4 text-center">
+              <div class="stat-box">
+                <span class="stat-number">50k+</span>
+                <span class="stat-label">Cups Served</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-image rounded-4 shadow-lg d-flex align-items-center justify-content-center">
+            <div class="text-center text-white p-5">
+              <i class="bi bi-cup-hot display-1 mb-3"></i>
+              <p class="lead fw-semibold">Roasted Fresh Weekly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Visit Us</h2>
+        <p class="text-muted">We'd love to see you. Drop by or send us a message.</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="contact-card card border-0 shadow-sm h-100 text-center p-4">
+            <i class="bi bi-geo-alt-fill contact-icon mb-3"></i>
+            <h5 class="fw-bold">Location</h5>
+            <p class="text-muted small mb-0">42 Maple Street<br>Portland, OR 97201</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-card card border-0 shadow-sm h-100 text-center p-4">
+            <i class="bi bi-clock-fill contact-icon mb-3"></i>
+            <h5 class="fw-bold">Hours</h5>
+            <p class="text-muted small mb-0">Mon–Fri: 7am – 7pm<br>Sat–Sun: 8am – 8pm</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-card card border-0 shadow-sm h-100 text-center p-4">
+            <i class="bi bi-envelope-fill contact-icon mb-3"></i>
+            <h5 class="fw-bold">Contact</h5>
+            <p class="text-muted small mb-0">hello@brewandbean.com<br>(503) 555-0142</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-7">
+          <form id="contact-form" class="card border-0 shadow-sm p-4 p-md-5">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@email.com" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Say hello..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                  <i class="bi bi-send me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+            <div id="form-alert" class="alert mt-3 d-none" role="alert"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 text-center text-white">
+    <div class="container">
+      <p class="mb-1 fw-semibold"><i class="bi bi-cup-hot-fill me-2"></i>Brew & Bean</p>
+      <p class="small text-white-50 mb-0">&copy; 2026 Brew & Bean Coffee Shop. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="config.js"></script>
+  <script src="messages.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
